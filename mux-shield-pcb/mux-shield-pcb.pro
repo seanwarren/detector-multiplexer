@@ -1,9 +1,9 @@
 EAGLE AutoRouter Statistics:
 
-Job           : /Users/sean/Documents/eagle/arduino_uno_r3_shield/Arduino Uno v3 Shield.brd
+Job           : /Users/sean/repositories/detector-multiplexer/mux-shield-pcb/mux-shield-pcb.brd
 
-Start at      : 09:07:36 (16/06/2015)
-End at        : 09:07:49 (16/06/2015)
+Start at      : 18:33:56 (01/07/2015)
+End at        : 18:34:08 (01/07/2015)
 Elapsed time  : 
 
 Signals       :    14   RoutingGrid: 6 mil  Layers: 2
@@ -18,8 +18,8 @@ Number of Ripups  :         0         0         0         0         0         0 
 max. Level        :         0         0         0         0         0         0         0         0         0         0         0         0         0         0
 max. Total        :         0         0         0         0         0         0         0         0         0         0         0         0         0         0
 
-Routed            :        18        40        40        40        40        40        40        40        40        40        40        40        40        40
-Vias              :         0         1         4         1         0         0         0         0         0         0         0         0         0         0
-Resolution        :    45.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
+Routed            :        40        40        40        40        40        40        40        40        40        40        40        40        40        40
+Vias              :         0         0         5         0         0         0         0         0         0         0         1         1         1         1
+Resolution        :   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
 Final             : 100.0% finished

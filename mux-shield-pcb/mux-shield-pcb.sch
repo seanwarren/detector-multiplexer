@@ -1542,6 +1542,14 @@ EZ is for kits. Pads are only exposed on the bottom side to help prevent solderi
 <wire x1="45.72" y1="177.8" x2="45.72" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="177.8" x2="45.72" y2="177.8" width="0.1524" layer="91"/>
 <junction x="45.72" y="177.8"/>
+<pinref part="S1" gate="S" pin="1"/>
+<wire x1="58.42" y1="144.78" x2="53.34" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="S1" gate="S" pin="2"/>
+<wire x1="58.42" y1="142.24" x2="53.34" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="142.24" x2="53.34" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="177.8" x2="53.34" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="177.8" x2="53.34" y2="144.78" width="0.1524" layer="91"/>
+<junction x="53.34" y="144.78"/>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
@@ -1575,17 +1583,8 @@ EZ is for kits. Pads are only exposed on the bottom side to help prevent solderi
 <segment>
 <pinref part="JP1" gate="G$1" pin="5"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
-<wire x1="40.64" y1="182.88" x2="53.34" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="182.88" x2="55.88" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="182.88" x2="55.88" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="182.88" x2="55.88" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="S1" gate="S" pin="2"/>
-<wire x1="58.42" y1="142.24" x2="53.34" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="142.24" x2="53.34" y2="144.78" width="0.1524" layer="91"/>
-<junction x="53.34" y="182.88"/>
-<pinref part="S1" gate="S" pin="1"/>
-<wire x1="53.34" y1="144.78" x2="53.34" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="144.78" x2="53.34" y2="144.78" width="0.1524" layer="91"/>
-<junction x="53.34" y="144.78"/>
 </segment>
 </net>
 <net name="N$1" class="0">
