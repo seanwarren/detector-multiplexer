@@ -62,6 +62,7 @@ void setup() {
   // put your setup code here, to run once:
   SerialUSB.begin(9600);
   
+  pinMode(muxPin, OUTPUT);
   
   pinMode(segGnd, OUTPUT);
   for(int i=0; i<7; i++)
