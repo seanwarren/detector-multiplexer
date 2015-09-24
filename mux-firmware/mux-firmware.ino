@@ -34,6 +34,13 @@ void setState()
      digitalWrite(muxPin, LOW);
   else if (state == 1)
      digitalWrite(muxPin, HIGH);    
+
+  if (state == 0)
+    SerialUSB.write("Detector 1\n");
+  else if (state == 1)
+    SerialUSB.write("Detector 2\n");
+  else if (state == 2)
+    SerialUSB.write("Interleaved\n");
 }
 
 void line_clock()
@@ -53,8 +60,10 @@ void frame_clock()
 
 void setup() {
   // put your setup code here, to run once:
+  SerialUSB.begin(9600);
+  
+  
   pinMode(segGnd, OUTPUT);
-
   for(int i=0; i<7; i++)
   {
     pinMode(segA+i, OUTPUT);
@@ -77,4 +86,34 @@ void loop()
     setState();
     writeNumber(state+1);
   }
+
+  if (SerialUSB.available() > 0) 
+  {
+    // get incoming byte:
+    char inByte = SerialUSB.read();
+
+    switch (inByte)
+    {
+      case '0':
+        state = 0;
+        setState();
+        break;
+      case '1':
+        state = 1;
+        setState();
+        break;
+      case '2':
+        state = 2;
+        setState();
+        break;
+      case 'I':
+        SerialUSB.write("Detector Multiplexer v1.2\n");
+        setState();
+        break;
+      case 'S':
+        setState();
+        break;
+    }
+  }
+  
 }
