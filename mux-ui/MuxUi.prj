@@ -1,9 +1,9 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration build-checksum="4075169950" file="C:\Users\CIMLab\Documents\detector-multiplexer\mux-ui\MuxUi.prj" location="C:\Users\CIMLab\Documents\detector-multiplexer\mux-ui" name="MuxUi" preferred-package-location="C:\Users\CIMLab\Documents\detector-multiplexer\mux-ui\MuxUi\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+  <configuration build-checksum="517435337" file="C:\Users\CIMLab\Documents\detector-multiplexer\mux-ui\MuxUi.prj" location="C:\Users\CIMLab\Documents\detector-multiplexer\mux-ui" name="MuxUi" preferred-package-location="C:\Users\CIMLab\Documents\detector-multiplexer\mux-ui\MuxUi\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>MuxUi</param.appname>
     <param.icon />
     <param.icons />
-    <param.version>1.2</param.version>
+    <param.version>1.4</param.version>
     <param.authnamewatermark>Sean Warren</param.authnamewatermark>
     <param.email>s.warren@garvan.org.au</param.email>
     <param.company>Garvan Institute of Medical Research</param.company>
@@ -11,11 +11,11 @@
     <param.description />
     <param.screenshot />
     <param.guid />
-    <param.net.saved.interface />
     <param.installpath.string>\Garvan Institute of Medical Research\MuxUi\</param.installpath.string>
     <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
     <param.logo />
     <param.install.notes />
+    <param.target.install.notes />
     <param.intermediate>${PROJECT_ROOT}\MuxUi\for_testing</param.intermediate>
     <param.files.only>${PROJECT_ROOT}\MuxUi\for_redistribution_files_only</param.files.only>
     <param.output>${PROJECT_ROOT}\MuxUi\for_redistribution</param.output>
@@ -45,10 +45,10 @@
       <param.description />
       <param.screenshot />
       <param.guid />
-      <param.net.saved.interface />
       <param.installpath.string />
       <param.installpath.combo />
       <param.logo />
+      <param.target.install.notes />
       <param.intermediate />
       <param.files.only />
       <param.output />
@@ -67,13 +67,16 @@
       <param.log.file />
     </unset>
     <fileset.main>
-      <file>${PROJECT_ROOT}\mux_ui.m</file>
+      <file>${PROJECT_ROOT}\mux_launcher.m</file>
     </fileset.main>
     <fileset.resources>
       <file>${PROJECT_ROOT}\GetSerialDevices.m</file>
       <file>${PROJECT_ROOT}\mux_ui.fig</file>
     </fileset.resources>
     <fileset.package />
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\mux_ui.m</file>
+    </fileset.depfun>
     <build-deliverables>
       <file location="${PROJECT_ROOT}\MuxUi\for_testing" name="splash.png" optional="false">C:\Users\CIMLab\Documents\detector-multiplexer\mux-ui\MuxUi\for_testing\splash.png</file>
       <file location="${PROJECT_ROOT}\MuxUi\for_testing" name="readme.txt" optional="true">C:\Users\CIMLab\Documents\detector-multiplexer\mux-ui\MuxUi\for_testing\readme.txt</file>
@@ -81,7 +84,7 @@
     </build-deliverables>
     <workflow />
     <matlab>
-      <root>C:\Program Files\MATLAB\R2015a</root>
+      <root>C:\Program Files\MATLAB\R2015b</root>
       <toolboxes>
         <toolbox name="matlabhdlcoder" />
         <toolbox name="fixedpoint" />

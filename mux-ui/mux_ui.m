@@ -22,7 +22,7 @@ function varargout = mux_ui(varargin)
 
 % Edit the above text to modify the response to help mux_ui
 
-% Last Modified by GUIDE v2.5 23-Sep-2015 11:38:53
+% Last Modified by GUIDE v2.5 21-Mar-2016 08:29:55
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -152,3 +152,17 @@ function TryWriting(handles, str)
         disp(e)
         set(handles.status_string,'String','Error');
     end
+
+
+% --- Executes when user attempts to close figure1.
+function figure1_CloseRequestFcn(hObject, eventdata, handles)
+% hObject    handle to figure1 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hint: delete(hObject) closes the figure
+
+    % try to put back to channel 1
+    TryWriting(handles,'0');
+
+    delete(hObject);
